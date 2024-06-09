@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://delivercdn.pages.dev/barclay/images/caesium/apps/search.png" sizes="30x30">
+    <link rel="icon" type="image/png" href="https://delivercdn.pages.dev/barclay/images/caesium/apps/search.png" sizes="600x600">
+    <title>Barclay Search</title>
+    <link rel="stylesheet" href="BarclaySearchEngineStyles.css">
+</head>
+<body>
+    <br>
+    <div class="container">
+        <h1>Barclay Search</h1>
+        <form id="search-form">
+            <input type="text" id="query" name="query" placeholder="Search..." required>
+            <button type="submit">GO</button>
+        </form>
+        <div id="total-results" class="total-results"></div>
+        <div id="results"></div>
+        <div class="pagination">
+            <button id="prev" disabled>Back</button>
+            <button id="next" disabled>Next</button>
+        </div>
+        <div id="pagination-info" class="pagination-info"></div>
+    </div>
+    <script src="BarclaySearchEngineScripts.js"></script>
+    <br>
+</body>
+</html>

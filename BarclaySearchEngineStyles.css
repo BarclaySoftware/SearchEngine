@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Kilroy';
+    src: url(https://delivercdn.pages.dev/barclay/fonts/kilroy.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kilroy Medium';
+    src: url(https://delivercdn.pages.dev/barclay/fonts/kilroy-medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kilroy Bold';
+    src: url(https://delivercdn.pages.dev/barclay/fonts/kilroy-bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.logo {
+    width: auto;
+    height: 60px;
+}
+
+body {
+    font-family: 'Kilroy', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: #ffffff;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Kilroy Bold', Arial, sans-serif;
+    color: #202124;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Kilroy';
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#search-form {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#search-form input[type="text"] {
+    font-family: 'Kilroy', Arial, sans-serif;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #e1e1e1;
+    border-radius: 100px;
+    outline: none;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+#search-form input[type="text"]:focus {
+    border-color: #3b78e8;
+}
+
+#search-form input[type="text"]::placeholder {
+    color: #5f6368;
+}
+
+#search-form button {
+    font-family: 'Kilroy', Arial, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #3b78e8;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 100px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+#results {
+    margin-top: 20px;
+}
+
+.result-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.result-item a {
+    font-family: 'Kilroy', Arial, sans-serif;
+    color: #1967d2;
+    text-decoration: none;
+}
+
+.result-item a:hover {
+    text-decoration: underline;
+}
+
+.result-item p {
+    margin-bottom: 10px;
+}
+
+.result-url {
+    font-family: 'Kilroy', Arial, sans-serif;
+    font-size: 14px;
+    color: #202124;
+    word-break: break-all;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination button {
+    font-family: 'Kilroy', Arial, sans-serif;
+    color: #ffffff;
+    margin: 0 5px;
+    padding: 10px 20px;
+    background: #1a73e8;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.pagination button:disabled {
+    color: #9aa0a6;
+    background: #ffffff;
+    cursor: not-allowed;
+}
+
+.pagination-info {
+    font-size: 14px;
+    color: #9aa0a6;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.total-results {
+    font-size: 14px;
+    color: #9aa0a6;
+    margin-top: 10px;
+    text-align: center;
+}
+
+::selection {
+    background-color: #3b78e8;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background-color: #3b78e8;
+    color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    background-color: #f2f2f2;
+}
+
+::-webkit-scrollbar-track {
+    background: #f2f2f2;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    border: 3px solid #f2f2f2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #9aa0a6;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #5f6368;
+}
